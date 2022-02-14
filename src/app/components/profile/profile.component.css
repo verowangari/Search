@@ -6,3 +6,11 @@ h1{
     background-color: black;
     text-align: center;
 }
+.search-bar input {
+    width: 75%;
+}
+form {
+    background-color: #F6B531;
+    padding: 80px;
+    
+}
