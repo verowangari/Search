@@ -4,7 +4,7 @@
         <input type="text" class="form-control" placeholder="Search git users with username" [(ngModel)]="username" name="username" (keyup)="findProfile()">
     </div>
 </form>
-<div *ngIf="profile">
+<div *ngIf="profile" class="container">
 <div class="panel panel-default">
     <div class="panel-heading">
         {{profile.name}}<small>({{profile.login}}) </small>
@@ -27,7 +27,7 @@
                 <p>
                     <span class="label label-default">{{profile.followers}} Followers</span>
                     <span class="label label-primary"> {{profile.following}}Following </span>
-                    <span class="label label-success">{{profile.public_gists}} Public gists</span>
+                    <span class="label label-success">{{profile.public_gists}} Public gists</span> <br>
                     <span class="label label-info">{{profile.public_repos}} Public Repos</span>
                 </p>
                 <p> <a href="{{profile.html_url}}" target="blank" class="btn btn-success btn-sm" >View Profile on github</a></p>
