@@ -30,3 +30,9 @@ form {
     margin-right: 10px;
     padding: 13px;
 }
+.panel-default{
+    /* border: 1px solid black; */
+}
+.panel-title{
+    background-color: #F5F5F5;
+}
