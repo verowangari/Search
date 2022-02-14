@@ -26,3 +26,7 @@ form {
 .label-info{
     background-color: #5BC0DE;
 }
+.label{
+    margin-right: 10px;
+    padding: 13px;
+}
