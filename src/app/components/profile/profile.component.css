@@ -14,3 +14,15 @@ form {
     padding: 80px;
     
 }
+.label-default{
+    background-color: #777777;
+}
+.label-primary{
+    background-color: #337AB7;
+}
+.label-success{
+    background-color: #5CB85C;
+}
+.label-info{
+    background-color: #5BC0DE;
+}
