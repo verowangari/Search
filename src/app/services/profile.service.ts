@@ -8,8 +8,8 @@ import { map } from 'rxjs/operators';
 })
 export class ProfileService {
   private username: string;
-  private clientid = '';
-  private clientsecret = '';
+  private clientid = '754b28b2c2e46c941de9';
+  private clientsecret = 'fdfea0215749cea8ae727701f79595dc0a5e295f';
   
   constructor(private http: HttpClient) {
     console.log('service is now ready');
