@@ -10,17 +10,21 @@ export class ProfileComponent implements OnInit {
 
    profile: any[] = [];
    repos: any[] = [];
+   username:string;
   constructor(private profileService: ProfileService) { 
-    this.profileService.getProfileInfo().subscribe(profile=>{
-      console.log(profile);
-      this.profile=[];
-    });
-    this.profileService.getprofileRepos().subscribe(repos=>{
-      console.log(repos);
-      this.repos=[];
-    })
+   
   }
-
+findProfile(){
+  this.profileService.updateProfile(this.username);
+  this.profileService.getProfileInfo().subscribe(profile=>{
+    console.log(profile);
+    this.profile=[];
+  });
+  this.profileService.getprofileRepos().subscribe(repos=>{
+    console.log(repos);
+    this.repos=[];
+  })
+}
   ngOnInit(): void {
   }
 
