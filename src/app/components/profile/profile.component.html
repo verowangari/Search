@@ -22,10 +22,19 @@
             <div class="col-sm-4"> 
                 <p>
                     <span class="label label-default">{{profile.followers}} Followers</span>
-                    <span class="label label-default"> Following{{profile.following}} </span>
-                    <span class="label label-default">{{profile.public_gists}} Public gists</span>
-                    <span class="label label-default">{{profile.public_repos}} Public Repos</span>
+                    <span class="label label-primary"> Following{{profile.following}} </span>
+                    <span class="label label-success">{{profile.public_gists}} Public gists</span>
+                    <span class="label label-info">{{profile.public_repos}} Public Repos</span>
                 </p>
+               <div class="panel panel-default">
+                   <div class="panel-heading">
+                       <h3 class="panel-title">Repos</h3>
+                   </div>
+                   <div class="panel-body" *ngFor="let repo of repos" > {{repo.name}} <a href="{{repo.html_url}}" target="blank" class="btn btn-sm btn-warning" >View Project on github</a> <p> 
+
+                   </p> </div>
+               </div>
+                <p> <a href="{{profile.html_url}}" target="blank" class="btn btn-success btn-sm" >View Profile on github</a></p>
             </div>
         </div>
     </div>
