@@ -25,11 +25,12 @@ form {
 }
 .label-info{
     background-color: #5BC0DE;
+    margin-top: 10px;
 }
 .label{
     margin-right: 5px;
     padding: 3px;
-    margin-top: 5px;
+   
 }
 .panel-default{
     /* border: 1px solid black; */
@@ -37,3 +38,6 @@ form {
 .panel-title{
     background-color: #F5F5F5;
 }
+img {
+    border-radius: 50%;
+  }
